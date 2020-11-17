@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>ComvertidorDeMonedaInador</title>
+<body>
+
+<h2>Cambio de moneda</h2>
+<p>Ingresa los Pesos:</p>
+
+<p>
+  <label>Pesos</label>
+  <input id="inputFeet" type="number" placeholder="MXN" oninput="CambioMoneda(this.value)" onchange="CambioMoneda(this.value)">
+</p>
+<p>Dolar: <span id="Convertidor"></span></p>
+
+<script>
+function CambioMoneda(valNum) {
+  document.getElementById("Convertidor").innerHTML=valNum*20.33;
+}
+</script>
+</body>
+</html>
